@@ -1,3 +1,8 @@
-const APIUrl = "https://de1ux-blog-backend.herokuapp.com";
+let APIUrl = "http://localhost:3001";
+
+// handle if we're running on heroku 
+if (window.location.host.indexOf('.herokuapp.com') !== -1) {
+    APIUrl = "https://de1ux-blog-backend.herokuapp.com";
+}
 
 export default APIUrl;
