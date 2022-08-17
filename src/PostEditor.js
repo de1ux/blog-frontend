@@ -20,6 +20,7 @@ const PostEditor = () => {
 		getPost();
 	}, []);
 
+	
 	const post = async (evt) => {
 		evt.preventDefault();
 
